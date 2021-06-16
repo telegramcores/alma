@@ -16,3 +16,4 @@ yum --enablerepo=elrepo-kernel install kernel-ml
 
 #podman
 https://itisgood.ru/2019/11/26/kak-zapustit-docker-kontejnery-ispolzuja-podman-i-libpod/
+https://www.reddit.com/r/podman/comments/i7abuf/how_to_save_the_state_of_a_podman_container/ - сохранить статус контейнера
