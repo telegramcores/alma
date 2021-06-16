@@ -7,3 +7,10 @@ https://cockpit-project.org/applications.html
 #Установка cockpit-ovirt-dashboard
 sudo dnf install https://resources.ovirt.org/pub/yum-repo/ovirt-release44.rpm
 dnf install cockpit-ovirt-dashboard -y
+sudo systemctl enable --now cockpit.socket
+
+#kernel update
+rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
+yum install https://www.elrepo.org/elrepo-release-8.el8.elrepo.noarch.rpm
+yum --enablerepo=elrepo-kernel install kernel-ml
+
