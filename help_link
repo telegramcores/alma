@@ -3,3 +3,7 @@ https://www.server-world.info/en/note?os=CentOS_8&p=kvm&f=12
 
 #Плагины к Cockpit
 https://cockpit-project.org/applications.html
+
+#Установка cockpit-ovirt-dashboard
+sudo dnf install https://resources.ovirt.org/pub/yum-repo/ovirt-release44.rpm
+dnf install cockpit-ovirt-dashboard -y
