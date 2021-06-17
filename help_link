@@ -22,3 +22,12 @@ https://www.reddit.com/r/podman/comments/i7abuf/how_to_save_the_state_of_a_podma
 docker run --restart=always my-container
 ***
 podman rin --name pihole -it pihile bin/bash
+***
+
+
+#NFS-server
+https://wiki.it-kb.ru/unix-linux/centos/linux-how-to-setup-nfs-server-with-share-and-nfs-client-in-centos-7-2
+
+
+
+
