@@ -34,6 +34,11 @@ chkconfig smb on
 service smb start
 smbstatus
 
+#включение wi-fi
+yum install NetworkManager-wifi
+systemctl restart NetworkManager
+nmtui
+
 
 
 
