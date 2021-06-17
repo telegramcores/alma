@@ -21,3 +21,4 @@ https://www.reddit.com/r/podman/comments/i7abuf/how_to_save_the_state_of_a_podma
 Для перезапуска добавьте --restart={{ флаг для поведения }}, например:
 docker run --restart=always my-container
 ***
+podman rin --name pihole -it pihile bin/bash
