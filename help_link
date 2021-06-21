@@ -45,6 +45,8 @@ yum install NetworkManager-wifi
 systemctl restart NetworkManager
 nmtui
 
+#DHCP Docker
+https://docs.pi-hole.net/docker/DHCP/
 
 
 
