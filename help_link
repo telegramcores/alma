@@ -45,5 +45,7 @@ yum install NetworkManager-wifi
 systemctl restart NetworkManager
 nmtui
 
+Настройка LXC через libvirt
+https://geekcontainer.wordpress.com/2018/10/05/lxc-container-networkingnat-bridge/
 
 
