@@ -70,4 +70,5 @@ ip a
 //создание контейнера
   sudo lxc-create -t download -n alma -- --keyserver keyserver.ubuntu.com
 
-
+# Настройка fail2ban
+https://winitpro.ru/index.php/2019/12/13/nastrojka-fail2ban-v-linux/
