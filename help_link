@@ -65,7 +65,7 @@ ip a
 //проверяем настройки по умолчанию
   # cat /etc/lxc/default.conf
   lxc.network.type = veth
-  lxc.network.link = *virbr0*
+  lxc.network.link = virbr0   - здесь имя виртуальной сети
   lxc.network.flags = up
 * создание контейнера
   sudo lxc-create -t download -n alma -- --keyserver keyserver.ubuntu.com
