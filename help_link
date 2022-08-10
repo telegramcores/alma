@@ -4,7 +4,7 @@ https://www.server-world.info/en/note?os=CentOS_8&p=kvm&f=12
 #Плагины к Cockpit
 https://cockpit-project.org/applications.html
 
-#настройка Cockpit
+#настройка KVM и Cockpit
 https://blog.sedicomm.com/2020/06/26/kak-ustanovit-kvm-na-fedora-centos-rhel-8/
 
 #Установка cockpit-ovirt-dashboard
@@ -67,7 +67,7 @@ ip a
   lxc.network.type = veth
   lxc.network.link = virbr0   - здесь имя виртуальной сети
   lxc.network.flags = up
-* создание контейнера
+//создание контейнера
   sudo lxc-create -t download -n alma -- --keyserver keyserver.ubuntu.com
 
 
