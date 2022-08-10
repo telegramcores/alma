@@ -47,5 +47,7 @@ nmtui
 
 Настройка LXC через libvirt
 https://geekcontainer.wordpress.com/2018/10/05/lxc-container-networkingnat-bridge/
+* создание контейнера
+  sudo lxc-create -t download -n alma -- --keyserver keyserver.ubuntu.com
 
 
