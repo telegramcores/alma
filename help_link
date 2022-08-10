@@ -45,8 +45,28 @@ yum install NetworkManager-wifi
 systemctl restart NetworkManager
 nmtui
 
-Настройка LXC через libvirt
+
+#Установка репо Epel
+dnf config-manager --set-enabled crb
+dnf install epel-release
+
+
+#Настройка LXC через libvirt
 https://geekcontainer.wordpress.com/2018/10/05/lxc-container-networkingnat-bridge/
+// должен быть установлен репозитарий Epel
+// ставим всё для lxc
+yum -y install lxc lxc-templates libcap-devel libcgroup busybox wget bridge-utils lxc-extra
+//ставим libvirt
+yum install libvirtd
+systemctl start lxc
+systemctl start libvirtd
+//находим название виртуальной сети
+ip a
+//проверяем настройки по умолчанию
+  # cat /etc/lxc/default.conf
+  lxc.network.type = veth
+  lxc.network.link = *virbr0*
+  lxc.network.flags = up
 * создание контейнера
   sudo lxc-create -t download -n alma -- --keyserver keyserver.ubuntu.com
 
